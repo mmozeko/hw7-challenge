@@ -1,4 +1,6 @@
-INSERT INTO merchant VALUES
+INSERT INTO merchant 
+	(id_merchant, name, merchant_cat_id)
+VALUES
     (1, 'Murphy, Heath and Fields', 1),
     (2, 'Riggs-Adams', 1),
     (3, 'Sanders, Parks and Mcfarland', 2),

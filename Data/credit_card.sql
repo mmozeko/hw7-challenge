@@ -1,4 +1,6 @@
-INSERT INTO credit_card VALUES
+INSERT INTO credit_card 
+	(credit_card_number, card_holder_id)
+VALUES
     (3517111172421930, 1),
     (4761049645711555811, 1),
     (4866761290278198714, 2),
