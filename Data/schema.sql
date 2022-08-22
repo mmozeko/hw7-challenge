@@ -18,7 +18,8 @@ CREATE TABLE transaction (
   date timestamp without time zone DEFAULT now() NOT NULL,
   amount numeric NOT NULL,
   credit_card_number VARCHAR NOT NULL,
-  id_merchant INTEGER NOT NULL
+  id_merchant INTEGER NOT NULL,
+  FOREIGN KEY (id_merchant) REFERENCES merchant(id_merchant)
 );
 
 -- Create a table of credit_card
