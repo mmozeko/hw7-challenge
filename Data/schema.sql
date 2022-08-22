@@ -25,7 +25,8 @@ CREATE TABLE transaction (
 -- Create a table of credit_card
 CREATE TABLE credit_card (
   credit_card_number VARCHAR NOT NULL PRIMARY KEY,
-  card_holder_id INTEGER NOT NULL
+  card_holder_id INTEGER NOT NULL,
+  FOREIGN KEY (card_holder_id) REFERENCES card_holder(card_holder_id)
 );
 
 -- Create a card_holder table.
@@ -37,7 +38,8 @@ card_holder_id INTEGER NOT NULL PRIMARY KEY,
 CREATE TABLE merchant (
   id_merchant INTEGER NOT NULL PRIMARY KEY,
   name  VARCHAR NOT NULL,
-  merchant_cat_id INTEGER NOT NULL
+  merchant_cat_id INTEGER NOT NULL,
+  FOREIGN KEY (merchant_cat_id) REFERENCES merchant_category(merchant_cat_id)
 );
 
 -- Create a table of merchant_category
